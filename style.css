@@ -1,5 +1,37 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: skyblue;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.7fr 1fr;
+}
+
+.sidebar {
+  background-color: lightskyblue;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.header {
+  background-color: lightgoldenrodyellow;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.main {
+  background-color: whitesmoke;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .ht-avatar {
