@@ -26,7 +26,6 @@ body {
 }
 
 .sidebar .logo-area {
-  background-color: bisque;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -34,11 +33,9 @@ body {
 }
 
 .sidebar .nav-group-main {
-  background-color: aqua;
 }
 
 .sidebar .nav-group-sub {
-  background-color: aquamarine;
 }
 
 .sidebar .nav-group-sub li,
@@ -56,7 +53,7 @@ body {
 /* header */
 
 .header {
-  background-color: lightgoldenrodyellow;
+  background-color: white;
   grid-column: 2;
   grid-row: 1;
   display: grid;
@@ -152,6 +149,23 @@ body {
   background-color: whitesmoke;
   grid-column: 2;
   grid-row: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
+}
+
+.main .projects .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.main .projects .cards .card {
+  background-color: white;
+  border: 1px;
+  border-radius: 15px;
+  padding: 15px;
 }
 
 /* avatar thing */
